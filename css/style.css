@@ -490,6 +490,10 @@ border: 2px solid #fff;
 	margin-bottom:40px;
 }
 
+.client-name{
+    color: white;
+    font-size: 22px;
+}
 
 /* Team
 ---------------------------------*/
@@ -681,8 +685,8 @@ border: 2px solid #fff;
 .gplus a:hover {
 	background: #dd4b39;
 }
-.dribbble a:hover {
-	background: #ea4c89;
+.linkedin a:hover {
+	background: #0077B5;
 }
 
 .form{
