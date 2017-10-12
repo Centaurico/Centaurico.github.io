@@ -97,7 +97,7 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/launch-space.jpg) left top no-repeat;
+	background:url(../img/rocket.jpg) left top no-repeat;
     background-size: cover;
 	padding:280px 0;
 }
@@ -242,7 +242,9 @@ color: #fff;
 	overflow:hidden;	
 }
 .main-section.alabaster{
-	background:#fafafa;
+	/*background:#fafafa;*/
+	background:url(../img/desktop-test-cut2.jpg) left bottom no-repeat;  
+	background-size: cover;
 }
 
 /* Featured Work
