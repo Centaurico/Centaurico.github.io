@@ -496,7 +496,9 @@ border: 2px solid #fff;
     color: white;
     font-size: 22px;
 }
-
+.client-name img{
+	max-height: 50px;
+}
 /* Team
 ---------------------------------*/
 .team-leader-block{
