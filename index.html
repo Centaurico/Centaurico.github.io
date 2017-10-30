@@ -429,6 +429,7 @@
 </div>
 
 <footer class="footer">
+    <button id="submit_button" type="hidden" onclick="goog_report_conversion();"></button>
     <div class="container">
         <div class="footer-logo"><img src="img/centaurico-sticker.png" alt="Centaurico"></div>
         <span class="copyright">&copy; Centaurico 2017. All Rights Reserved</span>
@@ -495,13 +496,11 @@
 
 $(window).load(function(){
   
-  
   var $container = $('.portfolioContainer'),
       $body = $('body'),
       colW = 375,
       columns = null;
 
-  
   $container.isotope({
     // disable window resizing
     resizable: true,
@@ -533,9 +532,7 @@ $(window).load(function(){
          });
          return false;
     });
-  
 });
-
 </script>
 
     <!--Start of Tawk.to Script-->
@@ -550,7 +547,40 @@ $(window).load(function(){
         s0.parentNode.insertBefore(s1,s0);
     })();
 </script>
-    
+
+<!-- Google Code for Envio de formulario Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 832737265;
+        w.google_conversion_label = "_T88CJGoo3gQ8Z-KjQM";
+        w.google_remarketing_only = false;
+    }
+    // DO NOT CHANGE THE CODE BELOW.
+    goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+        }
+        var conv_handler = window['google_trackConversion'];
+        if (typeof(conv_handler) == 'function') {
+            conv_handler(opt);
+        }
+    }
+/* ]]> */
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
 <script>
     $(document).ready(function() {
         $('#formBlock').on('submit', function(e) {
@@ -579,12 +609,14 @@ $(window).load(function(){
                     console.log('success'); 
                     $('#formBlock').hide();
                     $('#sendmessage').show();
+                    $('#submit_button').click();
+                    
                 },
                 error: function() {
                     console.log("failed!");
                 }
             });
-        })
+        });
     });
 
 </script>
