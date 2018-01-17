@@ -508,13 +508,13 @@ border: 2px solid #fff;
 .team-leader-box{
 	width:30.66%;
 	margin-right: 3.82979%;
-	height: 490px;
+	height: 510px;
 	overflow: hidden;
 	text-align: center;
 	float: left;
 }
 .team-leader-box span{
-	margin-bottom:24px;
+	margin-bottom:15px;
 	display:block;
 }
 .team-leader-box:nth-of-type(3n+0){ margin:0;}
