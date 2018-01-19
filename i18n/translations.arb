@@ -1,0 +1,37 @@
+arb.register(
+    "lang", 
+    {
+    "MAIN_MOTTO": "We build agile teams to help you reach new horizons.",
+    "MAIN_START": "Get Started",
+    "MENU_HOME": "HOME",
+    "SERVICES_TITLE_1": "Outsourcing Services",
+    "MSG_CURR_LOCALE": "...and the selected language is \"{currentLocale}\".",
+      "@MSG_CURR_LOCALE": {
+        "placeholders": {
+          "0": {
+            "description": "This variable would show the current locale.",
+            "example": "fr"
+          }
+        }
+      }
+    }
+);
+
+arb.register(
+    "lang:es", 
+    {
+    "MAIN_MOTTO": "Somos los mas mejores del mundo mundial",
+    "MAIN_START": "Comencemos!",
+    "MENU_HOME": "Inicio",
+    "SERVICES_TITLE_1": "Servicios de Outsourcing",
+    "MSG_CURR_LOCALE": "...and the selected language is \"{currentLocale}\".",
+      "@MSG_CURR_LOCALE": {
+        "placeholders": {
+          "0": {
+            "description": "This variable would show the current locale.",
+            "example": "fr"
+          }
+        }
+      }
+    }
+);
