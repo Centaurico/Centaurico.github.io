@@ -216,7 +216,26 @@ color: #fff;
 .main-section{
 	padding:40px 0 110px;
 }
+.menu-drop{
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+.menu-drop .dropdown-menu{
+	right: 0px;
+	left: auto;
+}
 
+.menu-drop button {
+    color: #015894;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-drop button:hover, .menu-drop button:active, .menu-drop button:focus{
+    color: #7cc576;
+    text-decoration: none;
+}
 
 /* Services
 ---------------------------------*/

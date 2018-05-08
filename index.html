@@ -75,14 +75,26 @@
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
 	<div class="container">
         <ul class="main-nav">
-        	<li><a href="#header" arb:id="MENU_HOME">Home</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#team">The Team</a></li>
-            <li class="small-logo"><a href="#header"><img src="icons/favicon-96x96.png" alt="" style="height:55px;"></a></li>
-            <li><a href="#client">Who Trust Us</a></li>
-            <li><a href="#work">Our Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+        	<li><a href="#header" arb:id="menu_home">Home</a></li>
+            <li><a href="#service" arb:id="menu_services">Services</a></li>
+            <li><a href="#team" arb:id="menu_team">The Team</a></li>
+            <li class="small-logo" ><a href="#header"><img src="icons/favicon-96x96.png" alt="" style="height:55px;"></a></li>
+            <li><a href="#client" arb:id="menu_clients">Who Trust Us</a></li>
+            <li><a href="#work" arb:id="menu_work">Our Work</a></li>
+            <li><a href="#contact" arb:id="menu_contact">Contact</a></li>
         </ul>
+        <div class="dropdown menu-drop">
+          <button class="btn dropdown-toggle btn-link" type="button" id="Menu1" data-toggle="dropdown">
+            Languaje
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="Menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html?locale=en">English</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html?locale=es">Spanish</a></li>
+            <!--li role="presentation"><a role="menuitem" tabindex="-1" href="index.html?locale=pt">Portuguese</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html?locale=fr">French</a></li-->
+          </ul>
+        </div>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
 </nav><!--main-nav-end-->
@@ -92,7 +104,7 @@
 <section class="main-section" id="service"><!--main-section-start-->
 	<div class="container">
     	<h2 arb:id="SERVICES_TITLE_1">Outsourcing Services</h2>
-    	<h6>These are the things we do to help our partners reach the sky</h6>
+    	<h6 arb:id="SERVICES_SUB_TITLE_1">These are the things we do to help our partners reach the sky</h6>
         <h6 style="text-align:right;"></h6>
         <div class="row">
         	<div class="col-lg-5 col-sm-6 wow fadeInLeft delay-05s">
@@ -101,8 +113,8 @@
                     	<i class="fa-rocket"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>build agile teams</h3>
-                        <p>Our professionals are cherry-picked to join our teams. <br>
+                        <h3 arb:id="SERVICE_1_TITLE">build agile teams</h3>
+                        <p arb:id="SERVICE_1_DESC">Our professionals are cherry-picked to join our teams. <br>
                             They deliver value often, so you can focus on what is most important.</p>
                     </div>
                 </div>
@@ -111,8 +123,8 @@
                     	<i class="fa-users"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>team management</h3>
-                        <p>Teams that continuously improve. This can only get better.</p>
+                        <h3 arb:id="SERVICE_2_TITLE">team management</h3>
+                        <p arb:id="SERVICE_2_DESC">Teams that continuously improve. This can only get better.</p>
                     </div>
                 </div>
                 <div class="service-list">
@@ -120,8 +132,8 @@
                     	<i class="fa-coffee"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>software development</h3>
-                        <p>Java and Javascript (Nodejs, Angular and React) are our stacks of choice, but we have experience with others too. <br> Just ask us.</p>
+                        <h3 arb:id="SERVICE_3_TITLE">software development</h3>
+                        <p arb:id="SERVICE_3_DESC">Java and Javascript (Nodejs, Angular and React) are our stacks of choice, but we have experience with others too. <br> Just ask us.</p>
                     </div>
                 </div>
                 <div class="service-list">
@@ -129,8 +141,8 @@
                     	<i class="fa-flask"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>innovate</h3>
-                        <p>Play with new technologies and methodologies as a way to improve quality and reduce time to market.</p>
+                        <h3 arb:id="SERVICE_4_TITLE">innovate</h3>
+                        <p arb:id="SERVICE_4_DESC">Play with new technologies and methodologies as a way to improve quality and reduce time to market.</p>
                     </div>
                 </div>
             </div>
@@ -148,8 +160,8 @@
 
 <section class="main-section team" id="team"><!--main-section-start-->
     <div class="container">
-        <h2>team</h2>
-        <h6>"The people you choose to work with are the best predictor of success" -Jeff Atwood</h6>
+        <h2 arb:id="TEAM_TITLE">team</h2>
+        <h6 arb:id="TEAM_SUB_TITLE">"The people you choose to work with are the best predictor of success" -Jeff Atwood</h6>
         <div class="team-leader-block clearfix">
             <div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-03s"> 
@@ -160,9 +172,9 @@
                         <li><a href="https://www.linkedin.com/in/pabloblauer/" target="_blank" class="fa-linkedin"></a></li>
                     </ul>
                 </div>
-                <h3 class="wow fadeInDown delay-03s">Pablo Blauer</h3>
-                <span class="wow fadeInDown delay-03s">CEO & Project Manager</span>
-                <p class="wow fadeInDown delay-03s">Passionate about building great teams and getting the best of them. Always thinking how to improve development processes in an Agile way.</p>
+                <h3 class="wow fadeInDown delay-03s" arb:id="TEAM_PABLO">Pablo Blauer</h3>
+                <span class="wow fadeInDown delay-03s" arb:id="TEAM_PABLO_TITLE">CEO & Project Manager</span>
+                <p class="wow fadeInDown delay-03s" arb:id="TEAM_PABLO_DESC">Passionate about building great teams and getting the best of them. Always thinking how to improve development processes in an Agile way.</p>
             </div>
             <div class="team-leader-box">
                 <div class="team-leader  wow fadeInDown delay-06s"> 
@@ -173,9 +185,9 @@
                         <li><a href="https://www.linkedin.com/in/germanhohmann/" class="fa-linkedin"></a></li>
                     </ul>
                 </div>
-                <h3 class="wow fadeInDown delay-06s">Germán Hohmann</h3>
-                <span class="wow fadeInDown delay-06s">CTO & Team Leader</span>
-                <p class="wow fadeInDown delay-06s">Highly creative and constantly looking for innovation and improvement. Particularly interested in improving development process.</p>
+                <h3 class="wow fadeInDown delay-06s" arb:id="TEAM_GER">Germán Hohmann</h3>
+                <span class="wow fadeInDown delay-06s" arb:id="TEAM_GER_TITLE">CTO & Team Leader</span>
+                <p class="wow fadeInDown delay-06s" arb:id="TEAM_GER_DESC">Highly creative and constantly looking for innovation and improvement. Particularly interested in improving development process.</p>
             </div>
             <div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-09s"> 
@@ -185,9 +197,9 @@
                         <li><a href="https://twitter.com/elfrasco2046" class="fa-twitter"></a></li>
                     </ul>
                 </div>
-                <h3 class="wow fadeInDown delay-09s">Adrián Paredes</h3>
-                <span class="wow fadeInDown delay-09s">Software Architect</span>
-                <p class="wow fadeInDown delay-09s">Obsessed with creativity and innovation. Experienced in design and development of Enterprise applications.</p>
+                <h3 class="wow fadeInDown delay-09s" arb:id="TEAM_ADRI">Adrián Paredes</h3>
+                <span class="wow fadeInDown delay-09s" arb:id="TEAM_ADRI_TITLE">Software Architect</span>
+                <p class="wow fadeInDown delay-09s" arb:id="TEAM_ADRI_DESC">Obsessed with creativity and innovation. Experienced in design and development of Enterprise applications.</p>
             </div>
 			<div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-09s"> 
@@ -198,9 +210,9 @@
                         <li><a href="https://www.linkedin.com/in/ricardo-manuel-balsimelli-reyes-18887314/" target="_blank" class="fa-linkedin"></a></li>
                     </ul>
                 </div>
-                <h3 class="wow fadeInDown delay-09s">Ricardo Balsimelli</h3>
-                <span class="wow fadeInDown delay-09s">Business Development</span>
-                <p class="wow fadeInDown delay-09s">Enthusiastic in IT solutions applications that improve company's productivity and profitability, Expert in Computer Systems and Quality Management Diploma. Empathy to understand customers needs.</p>
+                <h3 class="wow fadeInDown delay-09s" arb:id="TEAM_RIC">Ricardo Balsimelli</h3>
+                <span class="wow fadeInDown delay-09s" arb:id="TEAM_RIC_TITLE">Business Development</span>
+                <p class="wow fadeInDown delay-09s" arb:id="TEAM_RIC_DESC">Enthusiastic in IT solutions applications that improve company's productivity and profitability, Expert in Computer Systems and Quality Management Diploma. Empathy to understand customers needs.</p>
             </div>            
             <div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-09s"> 
@@ -301,14 +313,14 @@
 		<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
     	<div class="row">
         	<div class="col-lg-12">
-            	<p class="client-part-haead wow fadeInDown delay-05">Centaurico made an excellent job by improving our development process.</p>
+            	<p class="client-part-haead wow fadeInDown delay-05" arb:id="CLIE_CESAR">Centaurico made an excellent job by improving our development process.</p>
             </div>
         </div>
     	<ul class="client wow fadeIn delay-05s">
         	<li><a href="#">
             	<img src="img/clients/cesar.jpg" alt="">
                 <h3>César Morel</h3>
-                <span>Computer Services Management - PSA</span>
+                <span arb:id="CLIE_CESAR_TITLE">Computer Services Management - PSA</span>
             </a></li>
         </ul>
     </div>
@@ -338,15 +350,15 @@
             	<img  src="img/team/adrian-charla.jpg" alt="">
             </figure>
         	<div class="col-lg-7 col-sm-8 featured-work">
-            	<h2>featured work</h2>
-            	<P class="padding-b">During the last few years, our clients challenged us with very interesting projects. These are just 3 of them.</P>
+            	<h2 arb:id="WORK_TITLE">featured work</h2>
+            	<P class="padding-b" arb:id="WORK_SUBTITLE">During the last few years, our clients challenged us with very interesting projects. These are just 3 of them.</P>
             	<div class="featured-box">
                 	<div class="featured-box-col1 wow fadeInRight delay-02s">
                     	<i class="fa-home"></i>
                     </div>	
                 	<div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>Hotel MetaSearch - Cocha Turismo</h3>
-                        <p>This system laid the foundations of their Hotel Metasearch. We designed and built the whole backend, that processes and maps hundred of thousands of hotels.</p>
+                        <h3 arb:id="WORK_META_TITLE">Hotel MetaSearch - Cocha Turismo</h3>
+                        <p arb:id="WORK_META_DESC">This system laid the foundations of their Hotel Metasearch. We designed and built the whole backend, that processes and maps hundred of thousands of hotels.</p>
                     </div>    
                 </div>
                 <div class="featured-box">
@@ -354,8 +366,8 @@
                     	<i class="fa-bar-chart-o"></i>
                     </div>
                 	<div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>Tech Assessment - PSA</h3>
-                        <p>Our team run an assessment to determine how to improve time to market and reduce risk during development.</p>
+                        <h3 arb:id="WORK_PSA">Tech Assessment - PSA</h3>
+                        <p arb:id="WORK_PSA_DESC">Our team run an assessment to determine how to improve time to market and reduce risk during development.</p>
                     </div>    
                 </div>
                 <div class="featured-box">
@@ -363,11 +375,11 @@
                     	<i class="fa-dashboard"></i>
                     </div>	
                 	<div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>Traceability System - Delta3</h3>
-                        <p>This system was built for a very important atomic energy public company, to improve the way they trace back possible issues in the building to the materials it was made of.</p>
+                        <h3 arb:id="WORK_DELTA">Traceability System - Delta3</h3>
+                        <p arb:id="WORK_DELTA_DESC">This system was built for a very important atomic energy public company, to improve the way they trace back possible issues in the building to the materials it was made of.</p>
                     </div>    
                 </div>
-                <a class="Learn-More" href="#">Learn More</a>
+                <a class="Learn-More" href="#" arb:id="WORK_MORE">Learn More</a>
             </div>
         </div>
 	</div>
@@ -375,7 +387,7 @@
 
 <section class="business-talking"><!--business-talking-start-->
 	<div class="container">
-        <h2>Let’s Talk Business.</h2>
+        <h2 arb:id="CONTACT">Let’s Talk Business.</h2>
     </div>
 </section><!--business-talking-end-->
 
@@ -384,7 +396,7 @@
         <div class="row">
         	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
             	<div class="contact-info-box address clearfix">
-                	<h3><i class=" icon-map-marker"></i>Address:</h3>
+                	<h3 arb:id="CONTACT_ADDRESS"><i class=" icon-map-marker"></i>Address:</h3>
                 	<span>3400 Cap. Gral. Ramón Freire<br>Buenos Aires, Argentina.</span>
                 </div>
                 <div class="contact-info-box phone clearfix">
@@ -411,7 +423,7 @@
         	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
             	<div class="form">
                 	
-                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="sendmessage" arb:id="CONTACT_SENT">Your message has been sent. Thank you!</div>
                     <div id="errormessage"></div>
                     <form id="formBlock" action="" method="post" role="form" class="contactForm">
                         <div id="name_input" class="form-group">
@@ -429,7 +441,7 @@
                         <input type="hidden" name="_subject" id="_subject" value="Centaurico - Contact Form" />
                         <input type="text" name="_gotcha" id="_gotcha" style="display:none" />
                         
-                        <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+                        <div class="text-center"><button type="submit" class="input-btn" arb:id="CONTACT_ENVIAR">Send Message</button></div>
                     </form>
                 </div>	
             </div>
@@ -441,7 +453,7 @@
     <button id="submit_button" type="hidden" onclick="goog_report_conversion();" style="display: none;"></button>
     <div class="container">
         <div class="footer-logo"><img src="img/centaurico-sticker.png" alt="Centaurico"></div>
-        <span class="copyright">&copy; Centaurico 2017. All Rights Reserved</span>
+        <span class="copyright">&copy; Centaurico 2018. All Rights Reserved</span>
         <div class="credits">
             <!-- 
                 All the links in the footer should remain intact. 
@@ -662,7 +674,7 @@ chosen link or button. -->
 
         // JS localization
         var r$ = arb.getResource("lang");
-        document.write(arb.msg(r$.MSG_CURR_LOCALE, {'currentLocale': locale}));     
+        //document.write(arb.msg(r$.MSG_CURR_LOCALE, {'currentLocale': locale}));     
 
         // This should appear after all the translatable HTML content
         arb.localizeHtml();                             
